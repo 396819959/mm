@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RadioGroup
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:id="@+id/homepage_rg_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioButton
+        android:layout_weight="1"
+        android:text="排行"
+        android:button="@null"
+        android:gravity="center"
+        android:id="@+id/homepage_rb_ph_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RadioButton
+        android:text="咚咚"
+        android:button="@null"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/homepage_rb_dd_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RadioButton
+        android:text="半价"
+        android:button="@null"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/homepage_rb_bj_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RadioButton
+        android:text="折上折"
+        android:button="@null"
+        android:layout_weight="1"
+        android:id="@+id/homepage_rb_zsz_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RadioButton
+        android:text="聚拼团"
+        android:button="@null"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/homepage_rb_jpt_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RadioGroup>
+</android.support.constraint.ConstraintLayout>

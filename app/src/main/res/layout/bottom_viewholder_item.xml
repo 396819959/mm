@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_vh_item_id"
+
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:background="@drawable/bottom_vh_style"
+    android:contentDescription=""
+    android:src="@drawable/image_personal_head_gray">
+
+</ImageView>

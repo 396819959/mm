@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.example.liu.myappmao.MyCountView
+        android:id="@+id/mv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <TextView
+
+            android:textSize="40sp"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:text="当前数量" />
+
+        <TextView
+            android:textSize="40sp"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:text="总数" />
+    </com.example.liu.myappmao.MyCountView>
+
+</LinearLayout>
