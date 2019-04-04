@@ -1,19 +1,57 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<com.example.liu.myappmao.customView.CustomParentLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homePager_customParentLayout_id"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal">
+
+        <include layout="@layout/search_item" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center">
+
+        <include layout="@layout/custom_horizontal_option_bar_item" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/homepage_image_id"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/pull_down_animation" />
+    </LinearLayout>
+
+    <com.example.liu.myappmao.customView.CustomViewPage
+        android:id="@+id/homepage_ViewPage_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.example.liu.myappmao.customView.CustomViewPage>
+
+
+    <include
+        android:id="@+id/homePage_prodress_bar_id"
+        layout="@layout/progress_bar_item"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal" />
+
+</com.example.liu.myappmao.customView.CustomParentLayout>
 
 
 
-<android.support.v7.widget.RecyclerView
-    android:id="@+id/homePage_recyclerView_id"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
-
-
-
-
-
-</LinearLayout>

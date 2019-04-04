@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/radioGroup_id"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/homepage_id"-->
+    <!--style="@style/bottomBar"-->
+    <!--android:drawableTop="@drawable/homepage_select"-->
+    <!--android:text="首页"-->
+
+    <!--android:textSize="10sp" />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/resourse_id"-->
+    <!--style="@style/bottomBar"-->
+    <!--android:drawableTop="@drawable/classes_select"-->
+    <!--android:text="分类"-->
+    <!--android:textSize="10sp" />-->
+
+
+    <com.example.liu.myappmao.customView.MyRadioButton
+        android:id="@+id/homepage_id"
+        style="@style/bottomBar"
+        android:layout_gravity="center"
+        android:drawablePadding="-8dp"
+        android:paddingTop="4dp"
+        android:text="首页"
+
+        android:textSize="10sp"
+        app:topDrawable="@drawable/homepage_select"
+        app:topHeight="28dp"
+        app:topWidth="28dp" />
+
+
+    <com.example.liu.myappmao.customView.MyRadioButton
+        android:id="@+id/resourse_id"
+
+        style="@style/bottomBar"
+        android:layout_gravity="center"
+        android:drawablePadding="-8dp"
+        android:paddingTop="4dp"
+        android:text="分类"
+        android:textSize="10sp"
+
+        app:topDrawable="@drawable/classes_select"
+        app:topHeight="28dp"
+        app:topWidth="28dp" />
+
+    <com.example.liu.myappmao.customView.MyRadioButton
+        android:id="@+id/miao_id"
+
+        style="@style/bottomBar"
+        android:paddingTop="2dp"
+        app:topDrawable="@drawable/miao_select"
+        app:topHeight="46dp"
+        app:topWidth="46dp" />
+
+    <!--<RadioButton-->
+
+    <!--android:id="@+id/miao_id"-->
+    <!--style="@style/bottomBar"-->
+    <!--android:drawableTop="@drawable/miao_select" />-->
+
+
+    <com.example.liu.myappmao.customView.MyRadioButton
+        android:id="@+id/my_id"
+
+        style="@style/bottomBar"
+        android:layout_gravity="center"
+        android:drawablePadding="-8dp"
+        android:paddingTop="4dp"
+
+        android:text="我的"
+        android:textSize="10sp"
+        app:topDrawable="@drawable/my_select"
+        app:topHeight="28dp"
+        app:topWidth="28dp" />
+
+
+</RadioGroup>

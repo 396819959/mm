@@ -15,7 +15,7 @@ public abstract class BaseRecyclerViewAdapter extends RecyclerView.Adapter {
     public Context context;
     public List list;
 
-    public BaseRecyclerViewAdapter(Context context, List list) {
+    public BaseRecyclerViewAdapter() {
     }
 
     @Override
@@ -27,6 +27,8 @@ public abstract class BaseRecyclerViewAdapter extends RecyclerView.Adapter {
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
 
     }
+
+    public abstract void onBindViewHolder(LinearRecyclerViewAdapter.linearViewHolder holder, int position);
 
     @Override
     public int getItemCount() {

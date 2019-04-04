@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal">
+
+
+    <com.example.liu.myappmao.customView.MyRadioButton
+        android:id="@+id/commodity_collect_id"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:button="@null"
+        android:gravity="center"
+        android:paddingTop="4dp"
+        android:text="收藏"
+        android:textSize="10sp"
+        app:topDrawable="@drawable/detail_tab_like_default"
+        app:topHeight="28dp"
+        app:topWidth="28dp"
+
+        />
+
+    <com.example.liu.myappmao.customView.MyRadioButton
+        android:id="@+id/commodity_normal_id"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:button="@null"
+        android:gravity="center"
+        android:paddingTop="4dp"
+        android:text="正常价"
+        android:textSize="10sp"
+        app:topDrawable="@drawable/detail_tab_like_selected"
+        app:topHeight="28dp"
+        app:topWidth="28dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/icon_ddq_buy_bac"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/commodity_price_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1234.56"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="券后价"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,94 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.example.liu.myappmao.customView.CustomLayoutView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="6dp">
 
-    <ImageView
-        android:id="@+id/homepage_rv_imageview_id"
+    <com.example.liu.myappmao.customView.CustomSimpleView
+        app:fill_width="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="3" />
+        android:gravity="center">
+
+        <com.example.liu.myappmao.customView.CustomImageView
+
+            android:id="@+id/homepage_rv_imageview_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/miaol" />
+    </com.example.liu.myappmao.customView.CustomSimpleView>
 
     <LinearLayout
+
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="7"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
-            android:maxLines="1"
-            android:ellipsize="end"
             android:id="@+id/homepage_rv_title_id"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="2dp"
+            android:ellipsize="end"
             android:gravity="center_vertical"
+
+            android:maxLines="1"
             android:text="标题"
-            android:textSize="20sp" />
+            android:textSize="16sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
+
             android:orientation="horizontal">
 
             <TextView
-                android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
                 android:gravity="center_vertical"
-                android:text="天猫价   ："
-                android:textSize="14sp" />
+                android:text="天猫价:"
+                android:textColor="#949494"
+                android:textSize="12sp" />
 
             <TextView
-                android:layout_weight="1"
                 android:id="@+id/homepage_rv_tmj_id"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
                 android:gravity="center_vertical"
                 android:text="58"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
 
             <TextView
-                android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
                 android:gravity="center_vertical"
 
-                android:text="已售  ："
-                android:textSize="14sp" />
+                android:text="已售:"
+                android:textSize="12sp" />
 
             <TextView
-                android:layout_weight="1"
                 android:id="@+id/homepage_rv_ys_id"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="2dp"
                 android:gravity="center_vertical"
                 android:text="20"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
         </LinearLayout>
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
+
             android:orientation="horizontal">
 
             <TextView
-                android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="券后价   ："
-                android:textSize="14sp" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+
+                android:gravity="center_vertical"
+                android:text="券后价:"
+                android:textColor="#FF4500"
+                android:textSize="12sp" />
 
             <TextView
-                android:layout_weight="1"
                 android:id="@+id/homepage_rv_qhj_id"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center_vertical"
                 android:text="48"
+                android:textColor="#FF4500"
                 android:textSize="14sp" />
         </LinearLayout>
 
@@ -96,4 +128,4 @@
     </LinearLayout>
 
 
-</LinearLayout>
+</com.example.liu.myappmao.customView.CustomLayoutView>

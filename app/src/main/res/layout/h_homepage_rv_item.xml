@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.liu.myappmao.customView.CustomLayoutView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="200dp"
+    android:layout_height="260dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/h_homepage_rv_item_style"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <com.example.liu.myappmao.customView.CustomSimpleView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        app:fill_width="true">
+
+        <com.example.liu.myappmao.customView.CustomImageView
+
+            android:id="@+id/h_homepage_rv_imageview_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/miaol" />
+    </com.example.liu.myappmao.customView.CustomSimpleView>
+
+    <TextView
+        android:id="@+id/h_homepage_rv_title_id"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="2dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+
+        android:maxLines="1"
+        android:text="标题"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="2dp"
+
+
+            android:text="券后价:"
+            android:textColor="#FF4500"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/h_homepage_rv_qhj_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+
+            android:text="48"
+            android:textColor="#FF4500"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+
+            android:id="@+id/h_homepage_rv_tmj_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_vertical"
+            android:text="58"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+</com.example.liu.myappmao.customView.CustomLayoutView>

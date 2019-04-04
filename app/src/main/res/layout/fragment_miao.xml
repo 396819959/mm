@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<com.example.liu.myappmao.customView.CustomParentLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal">
+
+        <include layout="@layout/search_item" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center">
+
+        <include layout="@layout/custom_horizontal_option_bar_item" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/homepage_image_id"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/pull_down_animation" />
+    </LinearLayout>
+
+
+</com.example.liu.myappmao.customView.CustomParentLayout>
+    <!--<WebView-->
+        <!--android:id="@+id/miao_webView_id"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!---->
+    <!--</WebView>-->
+    <!--<com.example.liu.myappmao.customView.CustomComplexView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="46dp">-->
+
+            <!--<include layout="@layout/search_item" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="46dp"-->
+
+            <!--android:orientation="horizontal">-->
+
+            <!--<include layout="@layout/custom_horizontal_option_bar_item" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="#00000000"-->
+            <!--android:gravity="center_horizontal">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/homepage_image_id"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:background="@drawable/pull_down_animation" />-->
+        <!--</LinearLayout>-->
+
+
+        <!--<com.example.liu.myappmao.customView.CustomViewPage-->
+
+            <!--android:id="@+id/homepage_ViewPage_id"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+        <!--</com.example.liu.myappmao.customView.CustomViewPage>-->
+
+
+    <!--</com.example.liu.myappmao.customView.CustomComplexView>-->
+
+
+</RelativeLayout>

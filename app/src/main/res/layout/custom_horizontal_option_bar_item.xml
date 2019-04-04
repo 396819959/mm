@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?><!--<com.example.liu.myappmao.customView.CustomHorizontalOptionBar-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/horizontal_option_item_jp_id"
+        style="@style/horizontal_option_item_style"
+        android:layout_weight="7"
+        android:text="精品" />
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+
+        <RadioGroup
+            android:id="@+id/horizontal_option_item_radioGroup_id"
+
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/horizontal_option_item_nz_id"
+                style="@style/horizontal_option_item_style"
+                android:text="女装"
+                android:textColor="@color/horizontal_option_bar_select" />
+
+            <RadioButton
+                android:id="@+id/horizontal_option_item_ms_id"
+                style="@style/horizontal_option_item_style"
+                android:text="美食"
+                android:textColor="@color/horizontal_option_bar_select" />
+
+            <RadioButton
+                android:id="@+id/horizontal_option_item_mz_id"
+                style="@style/horizontal_option_item_style"
+                android:text="美妆"
+                android:textColor="@color/horizontal_option_bar_select" />
+
+            <RadioButton
+                android:id="@+id/horizontal_option_item_jjry_id"
+                style="@style/horizontal_option_item_style"
+                android:text="居家日用"
+                android:textColor="@color/horizontal_option_bar_select" />
+
+            <RadioButton
+                android:id="@+id/horizontal_option_item_nanz_id"
+                style="@style/horizontal_option_item_style"
+                android:text="男装"
+                android:textColor="@color/horizontal_option_bar_select" />
+
+            <RadioButton
+                android:id="@+id/horizontal_option_item_xp_id"
+                style="@style/horizontal_option_item_style"
+                android:text="鞋品"
+                android:textColor="@color/horizontal_option_bar_select" />
+
+            <RadioButton
+                android:id="@+id/horizontal_option_item_smjd_id"
+                style="@style/horizontal_option_item_style"
+                android:text="数码家电"
+                android:textColor="@color/horizontal_option_bar_select" />
+
+            <RadioButton
+                android:id="@+id/horizontal_option_item_my_id"
+                style="@style/horizontal_option_item_style"
+                android:text="母婴"
+                android:textColor="@color/horizontal_option_bar_select" />
+
+            <RadioButton
+                android:id="@+id/horizontal_option_item_xb_id"
+                style="@style/horizontal_option_item_style"
+                android:text="箱包"
+                android:textColor="@color/horizontal_option_bar_select" />
+
+            <RadioButton
+                android:id="@+id/horizontal_option_item_ny_id"
+                style="@style/horizontal_option_item_style"
+                android:text="内衣"
+                android:textColor="@color/horizontal_option_bar_select" />
+
+            <RadioButton
+                android:id="@+id/horizontal_option_item_wycp_id"
+                style="@style/horizontal_option_item_style"
+                android:text="文娱车品"
+                android:textColor="@color/horizontal_option_bar_select" />
+
+            <RadioButton
+                android:id="@+id/horizontal_option_item_ps_id"
+                style="@style/horizontal_option_item_style"
+                android:text="配饰"
+                android:textColor="@color/horizontal_option_bar_select" />
+
+            <RadioButton
+                android:id="@+id/horizontal_option_item_jzjf_id"
+                style="@style/horizontal_option_item_style"
+                android:text="家装家纺"
+                android:textColor="@color/horizontal_option_bar_select" />
+
+            <RadioButton
+                android:id="@+id/horizontal_option_item_hwyd_id"
+                style="@style/horizontal_option_item_style"
+                android:text="户外运动"
+                android:textColor="@color/horizontal_option_bar_select" />
+
+
+        </RadioGroup>
+
+
+    </HorizontalScrollView><!--</com.example.liu.myappmao.customView.CustomHorizontalOptionBar>-->
+</LinearLayout>

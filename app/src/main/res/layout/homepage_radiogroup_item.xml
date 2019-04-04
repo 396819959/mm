@@ -1,52 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<RadioGroup
-    android:gravity="center_horizontal"
-    android:orientation="horizontal"
+
+
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
     android:id="@+id/homepage_rg_id"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+
+
+    >
 
     <RadioButton
-        android:layout_weight="1"
-        android:text="排行"
-        android:button="@null"
-        android:gravity="center"
+        android:textSize="12sp"
+
         android:id="@+id/homepage_rb_ph_id"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-    <RadioButton
-        android:text="咚咚"
-        android:button="@null"
+        android:layout_height="60dp"
         android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/icon_goods_hot_ddq"
         android:gravity="center"
+        android:text="排行" />
+
+    <RadioButton
+        android:textSize="12sp"
+
         android:id="@+id/homepage_rb_dd_id"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-    <RadioButton
-        android:text="半价"
-        android:button="@null"
+        android:layout_height="60dp"
         android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/icon_goods_recommend_ddq"
         android:gravity="center"
+        android:text="咚咚" />
+
+    <RadioButton
+        android:textSize="12sp"
+
         android:id="@+id/homepage_rb_bj_id"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-    <RadioButton
-        android:text="折上折"
-        android:button="@null"
+        android:layout_height="60dp"
         android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/icon_qiang"
+        android:gravity="center"
+        android:text="半价" />
+
+    <RadioButton
+        android:textSize="12sp"
+
         android:id="@+id/homepage_rb_zsz_id"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-    <RadioButton
-        android:text="聚拼团"
-        android:button="@null"
+        android:layout_height="60dp"
         android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/icon_every_tab_top_watch_selected"
         android:gravity="center"
+        android:text="折上折" />
+
+    <RadioButton
+        android:textSize="12sp"
         android:id="@+id/homepage_rb_jpt_id"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/icon_ju"
+        android:gravity="center"
+        android:text="聚拼团" />
 </RadioGroup>
-</android.support.constraint.ConstraintLayout>
+

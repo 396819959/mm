@@ -1,8 +1,11 @@
 package com.example.liu.myappmao.itemData;
 
-public class HomePageRvItemDate {
-	
-	
+import java.io.Serializable;
+
+public class HomePageRvItemDate implements Serializable {
+
+
+
 	private int ID;// 商品id
 	private String GoodsID;// 商品淘宝id
 	private String Title;// 商品标题
@@ -30,7 +33,10 @@ public class HomePageRvItemDate {
 	private String QuanLink; // 手机券链接
 	private String AliClilck;// 淘宝客链接
 
+
 	public HomePageRvItemDate() {};
+
+
 
 	public HomePageRvItemDate(String Title, String Dtitle, String Pic, long OrgPrice, long Price, int SalesNum) {
 

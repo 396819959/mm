@@ -9,22 +9,14 @@
     </style>
 
     <style name="bottomBar">
+        <item name="android:background">#ffffff</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_weight">1</item>
-        <item name="android:button">@null</item>
+        <item name="android:layout_height">48dp</item>
         <item name="android:gravity">center</item>
-
-
-
-    </style>
-
-    <style name="bottomVHItem">
-
-
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
 
     </style>
-
 
     <style name="my_fragment_radiogroup_style">
         <item name="android:layout_width">match_parent</item>
@@ -34,5 +26,49 @@
         <item name="android:layout_weight">1</item>
         <item name="android:paddingLeft">6dp</item>
         <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="searchpage_button_style">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#80000000</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+
+
+    </style>
+
+
+    <style name="horizontal_option_item_style">
+        <item name="android:button">@null</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#80000000</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:gravity">center</item>
+
+
+    </style>
+
+    <style name="classes_item_style">
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/classes_layout_radiobutton_selecter</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:gravity">center</item>
+
     </style>
 </resources>

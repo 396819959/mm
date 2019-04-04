@@ -8,46 +8,46 @@ import android.graphics.Rect;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-public class MyDecoration extends RecyclerView.ItemDecoration{
+public class MyDecoration extends RecyclerView.ItemDecoration {
 
- private Paint paint;
- private Path path;
-    public MyDecoration(){
+    private Paint paint;
+    private Path path;
+    Rect rect;
+
+    public MyDecoration() {
 
         paint = new Paint();
         path = new Path();
-
+        // 指定绘制的区域
+         rect = new Rect();
     }
+
     @Override
     public void onDraw(Canvas c, RecyclerView parent, RecyclerView.State state) {
-       // super.onDraw(c, parent, state);
+        // super.onDraw(c, parent, state);
         paint.setColor(Color.parseColor("#eaeaea"));
         paint.setStrokeWidth(20);
 
         // 利用canvas想绘制什么就绘制什么
         // 在每一个item的头部来绘制
-        int childCount = parent.getChildCount() ;
+        int childCount = parent.getChildCount();
 
 
-        // 指定绘制的区域
-        Rect rect = new Rect() ;
-        rect.left = parent.getPaddingLeft() ;
-        rect.right = parent.getWidth() - parent.getPaddingRight() ;
+        rect.left = parent.getPaddingLeft();
+        rect.right = parent.getWidth() - parent.getPaddingRight();
         // 头部第一个不需要绘制分割线，所以直接从第二个开始
         for (int i = 1; i < childCount; i++) {
             // 分割线的底部就是 item的头部
-            rect.bottom = parent.getChildAt(i).getTop() ;
-            rect.top = rect.bottom - 10 ;
-            c.drawRect(rect , paint);
+            rect.bottom = parent.getChildAt(i).getTop();
+            rect.top = rect.bottom - 10;
+            c.drawRect(rect, paint);
         }
     }
 
 
-
-
     @Override
     public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
-       // super.getItemOffsets(outRect, view, parent, state);
+        // super.getItemOffsets(outRect, view, parent, state);
 // 代表在每个item底部的位置留出10px 来绘制分割线 , 效果可以实现，问题是最后一个item还有分割线
 
         int position = parent.getChildAdapterPosition(view);
@@ -73,10 +73,9 @@ public class MyDecoration extends RecyclerView.ItemDecoration{
 
 
         // 留出头部位置 ，即就是第一个item上边的位置
-        if (position != 0){
-            outRect.top = 10 ;
+        if (position != 0) {
+            outRect.top = 10;
         }
-
 
 
     }

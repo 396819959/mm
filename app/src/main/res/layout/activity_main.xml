@@ -1,45 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
->
+    >
 
     <FrameLayout
         android:id="@+id/bottomBar_fragme_id"
-        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></FrameLayout>
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
 
-    <RadioGroup
-        android:id="@+id/radioGroup_id"
-        android:layout_weight="9"
-        android:orientation="horizontal"
+    <include
+
+        layout="@layout/activity_main_bottombar_item"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
-        <RadioButton
-            android:text="首页"
-            style="@style/bottomBar"
-            android:id="@+id/homepage_id"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-        <RadioButton
-            android:text="资源"
-            style="@style/bottomBar"
-            android:id="@+id/resourse_id"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-        <RadioButton
-            android:text="我的"
-            style="@style/bottomBar"
-            android:id="@+id/my_id"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-    </RadioGroup>
+        android:layout_height="46dp"
+        />
 
 </LinearLayout>
+
+
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--&gt;-->
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/bottomBar_fragme_id"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <!--<include-->
+        <!--layout="@layout/activity_main_bottombar_item"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="46dp"-->
+        <!--android:layout_alignParentBottom="true"/>-->
+
+<!--</RelativeLayout>-->
